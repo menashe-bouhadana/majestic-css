@@ -1,0 +1,70 @@
+$majestic-length: 0.4s; // CHANGE TO WHAT YOU WANT
+
+.majestic {
+	display: block;
+
+	&-grow {
+		transition: transform $majestic-length ease-in-out;
+		&:hover {
+			transform: scale(1.1);
+		}
+	}
+	&-shrink {
+		transition: transform $majestic-length ease-in-out;
+		&:hover {
+			transform: scale(0.9);
+		}
+	}
+	&-alpha {
+		opacity: 0.7;
+		transition: opacity $majestic-length ease-in-out;
+		&:hover {
+			opacity: 1;
+		}
+	}
+	&-spin {
+		transition: transform $majestic-length ease-in-out;
+		&:hover {
+			transform: rotate(10deg);
+		}
+	}
+	&-border {
+		transition: border-radius $majestic-length ease-in-out;
+		&:hover {
+			border-radius: 100%;
+		}
+	}
+	&-shadow {
+		transition: box-shadow $majestic-length ease-in-out;
+		&:hover {
+			box-shadow: 10px 10px 0px #262452;
+		}
+	}
+	&-shake {
+		&:hover {
+			animation: shake $majestic-length ease;
+			animation-iteration-count: 1;
+		}
+	}
+}
+
+@keyframes shake {
+	15% {
+		transform: translateX(4px);
+	}
+	30% {
+		transform: translateX(-4px);
+	}
+	50% {
+		transform: translateX(3px);
+	}
+	65% {
+		transform: translateX(-3px);
+	}
+	80% {
+		transform: translateX(2px);
+	}
+	100% {
+		transform: translateX(0);
+	}
+}

@@ -1,0 +1,132 @@
+.majestic {
+  display: block;
+}
+
+.majestic-grow {
+  -webkit-transition: -webkit-transform 0.4s ease-in-out;
+  transition: -webkit-transform 0.4s ease-in-out;
+  transition: transform 0.4s ease-in-out;
+  transition: transform 0.4s ease-in-out, -webkit-transform 0.4s ease-in-out;
+}
+
+.majestic-grow:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.majestic-shrink {
+  -webkit-transition: -webkit-transform 0.4s ease-in-out;
+  transition: -webkit-transform 0.4s ease-in-out;
+  transition: transform 0.4s ease-in-out;
+  transition: transform 0.4s ease-in-out, -webkit-transform 0.4s ease-in-out;
+}
+
+.majestic-shrink:hover {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+
+.majestic-alpha {
+  opacity: 0.7;
+  -webkit-transition: opacity 0.4s ease-in-out;
+  transition: opacity 0.4s ease-in-out;
+}
+
+.majestic-alpha:hover {
+  opacity: 1;
+}
+
+.majestic-spin {
+  -webkit-transition: -webkit-transform 0.4s ease-in-out;
+  transition: -webkit-transform 0.4s ease-in-out;
+  transition: transform 0.4s ease-in-out;
+  transition: transform 0.4s ease-in-out, -webkit-transform 0.4s ease-in-out;
+}
+
+.majestic-spin:hover {
+  -webkit-transform: rotate(10deg);
+          transform: rotate(10deg);
+}
+
+.majestic-border {
+  -webkit-transition: border-radius 0.4s ease-in-out;
+  transition: border-radius 0.4s ease-in-out;
+}
+
+.majestic-border:hover {
+  border-radius: 100%;
+}
+
+.majestic-shadow {
+  -webkit-transition: -webkit-box-shadow 0.4s ease-in-out;
+  transition: -webkit-box-shadow 0.4s ease-in-out;
+  transition: box-shadow 0.4s ease-in-out;
+  transition: box-shadow 0.4s ease-in-out, -webkit-box-shadow 0.4s ease-in-out;
+}
+
+.majestic-shadow:hover {
+  -webkit-box-shadow: 10px 10px 0px #262452;
+          box-shadow: 10px 10px 0px #262452;
+}
+
+.majestic-shake:hover {
+  -webkit-animation: shake 0.4s ease;
+          animation: shake 0.4s ease;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+}
+
+@-webkit-keyframes shake {
+  15% {
+    -webkit-transform: translateX(4px);
+            transform: translateX(4px);
+  }
+  30% {
+    -webkit-transform: translateX(-4px);
+            transform: translateX(-4px);
+  }
+  50% {
+    -webkit-transform: translateX(3px);
+            transform: translateX(3px);
+  }
+  65% {
+    -webkit-transform: translateX(-3px);
+            transform: translateX(-3px);
+  }
+  80% {
+    -webkit-transform: translateX(2px);
+            transform: translateX(2px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@keyframes shake {
+  15% {
+    -webkit-transform: translateX(4px);
+            transform: translateX(4px);
+  }
+  30% {
+    -webkit-transform: translateX(-4px);
+            transform: translateX(-4px);
+  }
+  50% {
+    -webkit-transform: translateX(3px);
+            transform: translateX(3px);
+  }
+  65% {
+    -webkit-transform: translateX(-3px);
+            transform: translateX(-3px);
+  }
+  80% {
+    -webkit-transform: translateX(2px);
+            transform: translateX(2px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+/*# sourceMappingURL=majestic.css.map */
